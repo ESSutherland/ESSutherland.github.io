@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Random Number Generator</title>
+<script>
+//random number function
+function randomNumber(){
+	var rand = Math.floor((Math.random() * 10) + 1);
+	return rand;
+}
+//function called by button
+function buttonFunction(){
+	var rand = randomNumber();
+	document.getElementById("random").innerHTML = rand;
+}
+</script>
+
+</head>
+<body>
+Random Number: <span id="random"></span>
+<br/>
+<input type="button" value="Random Number" name="randButton" id="randButton" onClick="buttonFunction()"/>
+
+</body>
+</html>

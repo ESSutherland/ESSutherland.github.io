@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery Intro</title>
+    <script src="..\jquery-3.2.1.js"></script>
+</head>
+<body>
+    <script>
+	var currentDate = new Date();
+	var teamNames = ["Bears", "Cyclones", "Hawkeyes"];
+        $('document').ready(function () {
+			$('#currentDate').html((currentDate.getMonth()+1)+"/"+currentDate.getDate()+"/"+currentDate.getFullYear());
+			$('#calcPriceButton').click(function () {
+				var inPrice = parseInt($('#price').val());
+				var inQuantity = parseInt($('#quantity').val());
+				$('#total').html(inPrice*inQuantity);
+			});
+			for (i = 0; i < teamNames.length; i++) {
+            $('body').append("<p> Team " + (i + 1) + ": " + teamNames[i] + "</p>");
+        }
+        });
+        
+    </script>
+    Today's Date: <span id='currentDate'></span>
+    <hr/>
+    <form id="jsForm" name="jsForm" method="post" action="">
+        <p>
+            <label for="price">Price: </label>
+            <input type="text" id="price" name="price"/>
+        </p>
+        <p>
+            <label for="quantity">Quantity: </label>
+            <input type="text" id="quantity" name="quantity" />
+        </p>
+        <p>
+            <input type="button" id="calcPriceButton" value="Calculate" onclick="calculatePrice()"/>
+        </p>
+        <p>
+            Your total price will be: $<span id="total"></span>
+        </p>
+    </form>
+    <hr/>
+    
+</body>
+</html>

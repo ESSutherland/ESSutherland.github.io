@@ -1,0 +1,58 @@
+{
+  "name": "Chicken Casserole",
+  "servings": "Serves: <span id='servings'></span>",
+  "prep": "Preperation: <span id='prep'></span> minutes",
+  "cook": "Cooking: <span id='cook'></span> hours",
+  "difficulty": "Difficulty: Easy",
+  "img": "images/chicken.png",
+  "servingAmt": 8,
+  "prepTime": 10,
+  "cookTime": 40,
+  "ingredients": [
+    {
+      "ingredient": " cups cooked chicken, chopped",
+      "amt": 3
+    },
+    {
+      "ingredient": " cans (10.75 oz each) cream of chicken soup",
+      "amt": 2
+    },
+    {
+      "ingredient": " cups shredded Cheddar cheese",
+      "amt": 2
+    },
+    {
+      "ingredient": " cups crispy bread crumbs or any dry stuffing mix",
+      "amt": 3
+    },
+    {
+      "ingredient": " tablespoons butter or margarine, meltedy",
+      "amt": 6
+    }
+  ],
+
+  "defaultInstruction": [
+    { "step": "Fully cook and chop chicken into pieces, set aside" },
+    { "step": "Heat oven to 350&deg;F." },
+    { "step": "Place chicken in bottom of ungreased baking dish." },
+    { "step": "Spoon soup evenly over chicken and top with shredded cheese." },
+    { "step": "In medium bowl stir together melted butter and breadcrumbs. Sprinkle over baking dish." },
+    { "step": "Bake 35 to 40 minutes or until bubbly." }
+  ],
+  "halfInstruction": [
+    { "step": "Fully cook and chop chicken into pieces, set aside" },
+    { "step": "Heat oven to 350&deg;F." },
+    { "step": "Place chicken in bottom of ungreased baking dish." },
+    { "step": "Spoon soup evenly over chicken and top with shredded cheese." },
+    { "step": "In medium bowl stir together melted butter and breadcrumbs. Sprinkle over baking dish." },
+    { "step": "Bake 18 to 20 minutes or until bubbly." }
+  ],
+  "doubleInstruction": [
+    { "step": "Fully cook and chop chicken into pieces, set aside" },
+    { "step": "Heat oven to 350&deg;F." },
+    { "step": "Place chicken in bottom of ungreased baking dish." },
+    { "step": "Spoon soup evenly over chicken and top with shredded cheese." },
+    { "step": "In medium bowl stir together melted butter and breadcrumbs. Sprinkle over baking dish." },
+    { "step": "Bake 70 to 80 minutes or until bubbly." }
+  ]
+}

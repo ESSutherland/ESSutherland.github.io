@@ -1,0 +1,24 @@
+/*Ethan Sutherland
+09/25/2016*/
+
+body
+{
+	font-size: 1.2em;
+	font-family: Arial;
+	background-color: #e6e6fa;
+}
+
+em
+{
+	font-weight: bold;
+	color: green;
+}
+
+h3
+{
+	color: maroon;
+	text-transform: uppercase;
+	text-align: right;
+	font-size: 1.3em;
+	font-family: Times;
+}

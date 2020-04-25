@@ -1,0 +1,38 @@
+{
+  "candySelection": [
+    {
+      "name": "---",
+      "val":  "none"
+    },
+    {
+      "name": "Snickers",
+      "val": "snick"
+    },
+    {
+      "name": "Twix",
+      "val": "twix"
+    },
+    {
+      "name": "Skittles",
+      "val": "skit"
+    }
+  ],
+  "cupcakeSelection": [
+    {
+      "name": "---",
+      "val": "none"
+    },
+    {
+      "name": "Vanilla Cupcake",
+      "val": "van"
+    },
+    {
+      "name": "Chocolate Cupcake",
+      "val": "choc"
+    },
+    {
+      "name": "Red Velvet Cupcake",
+      "val": "red"
+    }
+  ]
+}

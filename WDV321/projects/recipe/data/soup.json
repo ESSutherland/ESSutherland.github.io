@@ -1,0 +1,106 @@
+{
+  "name": "Cheeseburger Soup",
+  "servings": "Serves: <span id='servings'></span>",
+  "prep": "Preperation: <span id='prep'></span> minutes",
+  "cook": "Cooking: <span id='cook'></span> hours",
+  "difficulty": "Difficulty: Easy",
+  "img": "images/soup.png",
+  "servingAmt": 8,
+  "prepTime": 45,
+  "cookTime": 10,
+  "ingredients": [
+    {
+      "ingredient": " pound ground beef",
+      "amt": 0.5
+    },
+    {
+      "ingredient": " tablespoons butter, divided",
+      "amt": 4
+    },
+    {
+      "ingredient": " cup chopped onion",
+      "amt": 0.75
+    },
+    {
+      "ingredient": " cup shredded carrots",
+      "amt": 0.75
+    },
+    {
+      "ingredient": " cup diced celery",
+      "amt": 0.75
+    },
+    {
+      "ingredient": " tsp. dried basil",
+      "amt": 1
+    },
+    {
+      "ingredient": " tsp. dried parsley flakes",
+      "amt": 1
+    },
+    {
+      "ingredient": " pounds cubed peeled potatoes",
+      "amt": 1.75
+    },
+    {
+      "ingredient": " cups chicken broth",
+      "amt": 3
+    },
+    {
+      "ingredient": " cup all-purpose flour",
+      "amt": 0.25
+    },
+    {
+      "ingredient": " package Velveeta process cheese, cubed",
+      "amt": 1
+    },
+    {
+      "ingredient": " cups whole milk",
+      "amt": 1.5
+    },
+    {
+      "ingredient": " tsp. salt",
+      "amt": 0.75
+    },
+    {
+      "ingredient": " tsp. pepper",
+      "amt": 0.25
+    },
+    {
+      "ingredient": " cup sour cream",
+      "amt": 0.25
+    }
+  ],
+  "defaultInstruction": [
+    { "step": "In a large saucepan over medium heat, cook and crumble beef until no longer pink; drain and set aside" },
+    { "step": "In same saucepan, melt 1 tablespoon butter over medium heat" },
+    { "step": "Saute onion, carrots, celery, basil and parsley until tender, about 10 minutes" },
+    { "step": "Add potatoes, beef and broth; bring to a boil" },
+    { "step": "Reduce heat; simmer, covered, until potatoes are tender, 10-12 minutes" },
+    { "step": "Meanwhile, in a small skillet, melt remaining butter. Add flour; cook and stir until bubbly, 3-5 minutes" },
+    { "step": "Add to soup; bring to a boil. Cook and stir 2 minutes" },
+    { "step": "Stir in cheese, milk, salt and pepper; cook until cheese melts" },
+    { "step": "Remove from heat; blend in sour cream" }
+  ],
+  "halfInstruction": [
+    { "step": "In a large saucepan over medium heat, cook and crumble beef until no longer pink; drain and set aside" },
+    { "step": "In same saucepan, melt 1/2 tablespoon butter over medium heat" },
+    { "step": "Saute onion, carrots, celery, basil and parsley until tender, about 5 minutes" },
+    { "step": "Add potatoes, beef and broth; bring to a boil" },
+    { "step": "Reduce heat; simmer, covered, until potatoes are tender, 5-6 minutes" },
+    { "step": "Meanwhile, in a small skillet, melt remaining butter. Add flour; cook and stir until bubbly, 1.5-2.5 minutes" },
+    { "step": "Add to soup; bring to a boil. Cook and stir 1 minutes" },
+    { "step": "Stir in cheese, milk, salt and pepper; cook until cheese melts" },
+    { "step": "Remove from heat; blend in sour cream" }
+  ],
+  "doubleInstruction": [
+    { "step": "In a large saucepan over medium heat, cook and crumble beef until no longer pink; drain and set aside" },
+    { "step": "In same saucepan, melt 2 tablespoon butter over medium heat" },
+    { "step": "Saute onion, carrots, celery, basil and parsley until tender, about 20 minutes" },
+    { "step": "Add potatoes, beef and broth; bring to a boil" },
+    { "step": "Reduce heat; simmer, covered, until potatoes are tender, 20-24 minutes" },
+    { "step": "Meanwhile, in a small skillet, melt remaining butter. Add flour; cook and stir until bubbly, 6-10 minutes" },
+    { "step": "Add to soup; bring to a boil. Cook and stir 4 minutes" },
+    { "step": "Stir in cheese, milk, salt and pepper; cook until cheese melts" },
+    { "step": "Remove from heat; blend in sour cream" }
+  ]
+}

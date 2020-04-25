@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript Review</title>
+    <script>
+        function displayCurrentDate() {
+            var currentDate = new Date();
+            var month = currentDate.getMonth()+1;
+            var day = currentDate.getDate();
+            var year = currentDate.getFullYear();
+
+            var fulldate = month + "/" + day + "/" + year;
+
+            document.getElementById("date").innerHTML = fulldate;
+        }
+
+        function calculatePrice() {
+            var inPrice = parseInt(document.getElementById("price").value);
+            var inQuantity = parseInt(document.getElementById("quantity").value);
+            var total = inPrice * inQuantity;
+
+            document.getElementById("total").innerHTML = total;
+        }
+
+        var teamNames = ["Bears", "Cyclones", "Hawkeyes"];
+
+    </script>
+
+</head>
+<body>
+    <p>Today's Date: <span id="date"></span></p>
+    <script>
+        displayCurrentDate();
+    </script>
+    <hr />
+    <form id="jsForm" name="jsForm" method="post" action="">
+        <p>
+            <label for="price">Price: </label>
+            <input type="text" id="price" name="price"/>
+        </p>
+        <p>
+            <label for="quantity">Quantity: </label>
+            <input type="text" id="quantity" name="quantity" />
+        </p>
+        <p>
+            <input type="button" id="calcPriceButton" value="Calculate" onclick="calculatePrice()"/>
+        </p>
+        <p>
+            Your total price will be: $<span id="total"></span>
+        </p>
+    </form>
+    <hr />
+    <script>
+        for (i = 0; i < teamNames.length; i++) {
+            document.write("<p> Team " + (i + 1) + ": " + teamNames[i] + "</p>");
+        }
+    </script>
+</body>
+</html>

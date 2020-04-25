@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Random Overwatch hero picker">
+  <meta name="keywords" content="random,overwatch,hero,picker,roulette,generator">
+  <meta name="author" content="Ethan Sutherland">
+  <title>Hero Picker</title>
+  <link href="styles/index.css" rel="stylesheet" type="text/css"/>
+  <script src="scripts/jquery-3.2.1.js"></script>
+  <script src="scripts/main.js"></script>
+  <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+  <script>
+    $(document).ready(function(){
+
+    });
+  </script>
+
+  <header>Overwatch Random Hero Picker</header>
+
+  <button id="getHero" onClick="pickHero()">Pick Hero</button>
+
+  <div id="heroPicked">
+    <h1 id="heroName">-</h1>
+    <div id="heroImg"></div>
+  </div>
+
+  <form id="filter">
+    <label class="container">Damage Heroes
+    <input type="checkbox" id="offense" checked="checked" onchange="toggleCategory('damage')"/>
+    <span class="checkmark"></span>
+    </label>
+
+    <label class="container">Tank Heroes
+    <input type="checkbox" id="tank" checked="checked" onchange="toggleCategory('tank')"/>
+    <span class="checkmark"></span>
+    </label>
+
+    <label class="container">Support Heroes
+    <input type="checkbox" id="support" checked="checked" onchange="toggleCategory('support')"/>
+    <span class="checkmark"></span>
+    </label>
+  </form>
+
+  <footer>Ethan Sutherland - 2018</footer>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WDV221 Intro Javascript</title>
+<!-- Ethan Sutherland-->
+<script>
+	var inputFirstName;
+	var inputLastName;
+	var formattedName;
+			
+	function loadName(){
+		inputFirstName = prompt("Enter first name:");
+		inputLastName = prompt("Enter last name:");
+	}
+			
+	function formatName(fName, lName){
+		formattedName = lName + ", " + fName;
+	}
+			
+	function displayFormattedName(nameFormatted){
+		alert("Formatted name: " + nameFormatted);
+	}
+			
+	function characterCount(){
+		var charCount = formattedName.length;
+		alert("Number of characters: " + charCount);
+	}
+	
+	function uppercaseName(){
+		alert("Uppercase name: " + formattedName.toUpperCase());
+		}
+</script>
+
+
+
+</head>
+
+<body>
+<h1>WDV221 Intro Javascript</h1>
+<h2>In Class Lab Quiz #1</h2>
+<h3>Instructions:</h3>
+<p>Create a global variable called inputFirstName. </p>
+<p>Create a global variable called inputLastName. </p>
+<p>Create a global variable called formattedName.</p>
+<p>Create a function called loadName( ). The function will do the following:</p>
+<ul>
+  <li>Use a prompt to ask the user to enter a first name. </li>
+  <li>Store the value in the inputFirstName variable.</li>
+  <li>Use a prompt to ask the user to enter a last name.</li>
+  <li>Store the value in the inputLastName variable.</li>
+</ul>
+<p>
+  <input type="button" name="button2" id="button2" value="Load a name" onClick="loadName()">
+</p>
+<p>Create a function called formatName( ). The function will do the following:</p>
+<ul>
+  <li>It will accept two input parameters</li>
+  <li>The first parameter should be treated as a first name.</li>
+  <li>The second parameter should be treated as a last name. </li>
+  <li>The function will format the values into last name, first name. <em>Example Smith, Amy</em></li>
+  <li>Store the result in the variable formattedName.</li>
+</ul>
+<p>
+  <input type="button" name="button3" id="button3" value="Format Name" onClick="formatName(inputFirstName, inputLastName)">
+</p>
+<p>Create a function called displayFormattedName( ). The function will do the following:</p>
+<ul>
+  <li>It will accept one input parameter</li>
+  <li>The function will display the value of the parameter in an alert with an appropriate message.</li>
+</ul>
+<p>
+  <input type="button" name="button4" id="button4" value="Display Formatted Name" onClick="displayFormattedName(formattedName)">
+</p>
+<p>User your characterCount( ) so the following button will display the number of characters in the formattedName variable. </p>
+<p>
+  <input type="button" name="button5" id="button5" value="Characters in Formatted Name" onClick="characterCount()">
+</p>
+<p>Use your uppercaseName( ) so the following button will display the formattedName variable in all uppercase letters.</p>
+<p>
+  <input type="button" name="button6" id="button6" value="Uppercase Formatted Name" onClick="uppercaseName()">
+</p>
+<p>&nbsp;</p>
+</body>
+</html>

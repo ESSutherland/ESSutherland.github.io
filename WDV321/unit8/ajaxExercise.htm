@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Ajax Exercise</title>
+    <script src="jquery-3.2.1.js"></script>
+    <style>
+        #studentInfo{
+            margin: 8px;
+            padding: 5px;
+            background-color: lightgray;
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        $('document').ready(function () {
+            $('#studentList').change(function () {
+                if ($(this).val() == 'student1') {
+                    $.get('900006361.json', function (data, status) {
+                        setOutput(data);
+                    });
+                }
+                else if ($(this).val() == 'student2') {
+                    $.get('900668871.json', function (data, status) {
+                        setOutput(data);
+                    });
+                }
+                else if ($(this).val() == 'student3') {
+                    $.get('903998004.json', function (data, status) {
+                        setOutput(data);
+                    });
+                }
+                else if ($(this).val() == 'none') {
+                    $('#student_id').html('');
+                    $('#student_name').html('');
+                    $('#student_major').html('');
+                    $('#student_credits').html('');
+                    $('#student_gpa').html('');
+                    $('#student_registration_date').html('');
+                }
+            });
+        });
+
+        function setOutput(studentJSON) {
+            $('#student_id').html(studentJSON.student_id);
+            $('#student_name').html(studentJSON.student_first_name + ' ' + studentJSON.student_last_name);
+            $('#student_major').html(studentJSON.student_major);
+            $('#student_credits').html(studentJSON.student_credits);
+            $('#student_gpa').html(studentJSON.student_gpa);
+            $('#student_registration_date').html(studentJSON.student_registration_date);
+        }
+
+    </script>
+    <h1>WDV321 Advanced Javascript</h1>
+    <h2>Unit 8 - Ajax Exercise</h2>
+    <hr/>
+    <p>
+        <select id="studentList">
+            <option value="none">---</option>
+            <option value="student1">Student 1</option>
+            <option value="student2">Student 2</option>
+            <option value="student3">Student 3</option>
+        </select>
+    </p>
+    <div id="studentInfo">
+        <center><h3>Student Info</h3></center>
+        <p>Student ID: <span id="student_id"></span></p>
+        <p>Student Name: <span id="student_name"></span></p>
+        <p>Major: <span id="student_major"></span></p>
+        <p>Credits: <span id="student_credits"></span></p>
+        <p>GPA: <span id="student_gpa"></span></p>
+        <p>Registration Date: <span id="student_registration_date"></span></p>
+    </div>
+    
+</body>
+</html>

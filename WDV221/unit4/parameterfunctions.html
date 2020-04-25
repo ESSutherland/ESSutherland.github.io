@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+<title>Parameter Functions</title>
+
+</head>
+<body>
+
+<script>
+function characterCount(inString){
+	charNum = inString.length;
+	alert("Number of characters: " + charNum);
+}
+
+function printName(firstName, lastName){
+	fullName = firstName + " " + lastName;
+	document.write(fullName);
+}
+
+function returnCharacterCount(inString){
+	charNum = inString.length;
+	return charNum;
+}
+
+function uppercaseName(){
+	inString = prompt();
+	inString.toUpperCase();
+	return inString;
+}
+
+printName("Ethan", "Sutherland");
+
+alert(returnCharacterCount("Ethan"));
+</script>
+
+<input type="button" value="Character Count" onClick="characterCount('Ethan')"/>
+
+<h2><script>document.write(uppercaseName())</script></h2>
+
+</body>
+</html>

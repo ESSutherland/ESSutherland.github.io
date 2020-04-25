@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="..\jquery-3.2.1.js"></script>
+    <script src="..\jquery-ui-1.12.1.custom\jquery-ui.js"></script>
+    <script src="cookiesScript.js"></script>
+    <link rel="stylesheet" href="..\jquery-ui-1.12.1.custom\jquery-ui.css" />
+    <script>
+
+    </script>
+</head>
+<body>
+    <script>
+        $(document).ready(function () {
+            $('#numVisits').html(getCookie('visits'));
+        });
+    </script>
+    <p>Number of times you have visited: <span id="numVisits"></span></p>
+</body>
+</html>

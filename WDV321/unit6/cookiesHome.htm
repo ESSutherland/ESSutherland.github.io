@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="..\jquery-3.2.1.js"></script>
+    <script src="..\jquery-ui-1.12.1.custom\jquery-ui.js"></script>
+    <script src="cookiesScript.js"></script>
+    <link rel="stylesheet" href="..\jquery-ui-1.12.1.custom\jquery-ui.css" />
+    <script>
+        function checkCookie() {
+            var visits = getCookie('visits');      
+            if (visits != "") {
+                var numVisits = parseInt(visits);
+                numVisits++;
+                updateCookie('visits', numVisits);
+            } else {
+                var numVisits = 1;
+                setCookie('visits', numVisits, 3);
+            }
+        }
+    </script>
+</head>
+<body> 
+    <script>
+        $('document').ready(function () {
+            checkCookie();
+        });
+    </script>
+    <h1>WDV 321 Advanced Javascript</h1> 
+    <h2>Cookies Assignment</h2>
+    <a href="cookiesAbout.htm"><h3>About Page</h3></a>
+</body>
+</html>

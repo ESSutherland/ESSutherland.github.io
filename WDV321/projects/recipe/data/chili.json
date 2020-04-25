@@ -1,0 +1,93 @@
+{
+  "name": "Crockpot Chili",
+  "servings": "Serves: <span id='servings'></span>",
+  "prep": "Preperation: <span id='prep'></span> minutes",
+  "cook": "Cooking: <span id='cook'></span> hours",
+  "difficulty": "Difficulty: Easy",
+  "img": "images/chili.png",
+  "servingAmt": 6,
+  "prepTime":  25,
+  "cookTime":  6,
+  "ingredients": [
+    {
+      "ingredient": " tbsp. cooking oil",
+      "amt": 2 },
+    {
+      "ingredient": " cup onion",
+      "amt": 1
+    },
+    {
+      "ingredient": " cup chopped peppers",
+      "amt": 1
+    },
+    {
+      "ingredient": " tbsp. Chili powder",
+      "amt": 8
+    },
+    {
+      "ingredient": " tsp. Hot chili powder (optional)",
+      "amt": 2
+    },
+    {
+      "ingredient": " lb ground beef or chicken",
+      "amt": 1
+    },
+    {
+      "ingredient": " cans Red Beans",
+      "amt": 2
+    },
+    {
+      "ingredient": " cans Kidney Beans",
+      "amt": 2
+    },
+    {
+      "ingredient": " cans Tomato Puree",
+      "amt": 2
+    },
+    {
+      "ingredient": " cans Tomato Sauce",
+      "amt": 2
+    },
+    {
+      "ingredient": " cup shredded cheese (optional)",
+      "amt": 1
+    },
+    {
+      "ingredient": " cup sour cream (optional)",
+      "amt": 0.5
+    }
+  ],
+  "defaultInstruction": [
+    { "step": "Heat cooking oil in 2 quart skillet." },
+    { "step": "Saute onions and peppers for 5 minutes." },
+    { "step": "Add spices and stir for 30 seconds." },
+    { "step": "Add meat and cook until browned. Approximately 15 minutes." },
+    { "step": "Pour contents of skillet into 3 quart crockpot." },
+    { "step": "Rinse beans and place in crockpot." },
+    { "step": "Open and pour Tomato puree and sauce into crockpot." },
+    { "step": "Cover crockpot and cook on low for 6 hours." },
+    { "step": "Serve into individual bowls and top with sour cream and cheese." }
+  ],
+  "halfInstruction": [
+    { "step": "Heat cooking oil in 1 quart skillet." },
+    { "step": "Saute onions and peppers for 5 minutes." },
+    { "step": "Add spices and stir for 30 seconds." },
+    { "step": "Add meat and cook until browned. Approximately 15 minutes." },
+    { "step": "Pour contents of skillet into 1-1/2 quart crockpot." },
+    { "step": "Rinse beans and place in crockpot." },
+    { "step": "Open and pour Tomato puree and sauce into crockpot." },
+    { "step": "Cover crockpot and cook on low for 3 hours." },
+    { "step": "Serve into individual bowls and top with sour cream and cheese." }
+  ],
+  "doubleInstruction": [
+    { "step": "Heat cooking oil in 4 quart skillet." },
+    { "step": "Saute onions and peppers for 5 minutes." },
+    { "step": "Add spices and stir for 30 seconds." },
+    { "step": "Add meat and cook until browned. Approximately 15 minutes." },
+    { "step": "Pour contents of skillet into 6 quart crockpot." },
+    { "step": "Rinse beans and place in crockpot." },
+    { "step": "Open and pour Tomato puree and sauce into crockpot." },
+    { "step": "Cover crockpot and cook on low for 12 hours." },
+    { "step": "Serve into individual bowls and top with sour cream and cheese." }
+  ]
+}

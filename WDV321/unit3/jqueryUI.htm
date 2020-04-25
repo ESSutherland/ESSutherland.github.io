@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>JQuery UI</title>
+    <script src="..\jquery-3.2.1.js"></script>
+    <script src="..\jquery-ui-1.12.1.custom\jquery-ui.js"></script>
+    <link rel="stylesheet" href="..\jquery-ui-1.12.1.custom\jquery-ui.css">
+</head>
+
+<body>
+<script>
+    $(document).ready(function() {
+        $('#dateBox').datepicker();
+        $('#title').selectmenu();
+        $(document).tooltip();
+    });
+    $(function () {
+        $("input[type='radio']").checkboxradio();
+    });
+</script>
+<h1>WDV 321 Advanced Javascript</h1>
+<h2>UNIT-3 JQuery UI</h2>
+
+<form id="dateForm">
+     <p>
+        Your Birthdate: 
+        <input type="text" id="dateBox" title="Please select your birth date from the Date Picker."/>
+     </p>
+
+ <p>
+    Preferred Title: 
+    <select name="title" id="title">
+        <option>---</option>
+        <option>Mr.</option>
+        <option>Ms.</option>
+        <option>Mrs.</option>
+        <option>Dr.</option>
+    </select>
+ </p>
+    <p>
+        Gender:
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other">
+    </p>
+    <p>
+       <input type="button" id="submitButton" value="Submit"/>
+       <input type="reset" id="reset" value="Reset"/>
+    </p>
+</form>
+</body>
+</html>

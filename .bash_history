@@ -1,0 +1,1 @@
+vi /etc/my.cnf

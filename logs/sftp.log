@@ -1,0 +1,62 @@
+Jul 17 15:53:15 10.71.52.2 u90321250 Connection from 10.71.52.2 port 37356 on 74.208.59.119 port 22
+Jul 17 15:53:17 10.71.52.2 u90321250 Failed password for u90321250 from 10.71.52.2 port 37356 ssh2
+Jul 17 15:54:55 10.71.52.2 u90321250 Connection from 10.71.52.2 port 31610 on 74.208.59.119 port 22
+Jul 17 15:54:55 10.71.52.2 u90321250 Accepted password for u90321250 from 10.71.52.2 port 31610 ssh2
+Jul 17 15:54:55 10.71.52.2 u90321250 Starting session: subsystem 'sftp' for u90321250 from 10.71.52.2 port 31610
+Jul 17 15:54:55 10.71.52.2 u90321250 session opened for local user u90321250 from [10.71.52.2]
+Jul 17 15:55:23 10.71.52.2 u90321250 sent status No such file
+Jul 17 15:55:23 10.71.52.2 u90321250 Connection from 10.71.52.2 port 47448 on 74.208.59.119 port 22
+Jul 17 15:55:24 10.71.52.2 u90321250 Accepted password for u90321250 from 10.71.52.2 port 47448 ssh2
+Jul 17 15:55:23 10.71.52.2 u90321250 Connection from 10.71.52.2 port 47450 on 74.208.59.119 port 22
+Jul 17 15:55:24 10.71.52.2 u90321250 Accepted password for u90321250 from 10.71.52.2 port 47450 ssh2
+Jul 17 15:55:24 10.71.52.2 u90321250 Starting session: subsystem 'sftp' for u90321250 from 10.71.52.2 port 47448
+Jul 17 15:55:24 10.71.52.2 u90321250 Starting session: subsystem 'sftp' for u90321250 from 10.71.52.2 port 47450
+Jul 17 15:55:24 10.71.52.2 u90321250 session opened for local user u90321250 from [10.71.52.2]
+Jul 17 15:55:24 10.71.52.2 u90321250 session opened for local user u90321250 from [10.71.52.2]
+Jul 17 15:55:24 10.71.52.2 u90321250 open "/.bash_history" flags READ mode 0666
+Jul 17 15:55:24 10.71.52.2 u90321250 open "/.viminfo" flags READ mode 0666
+Jul 17 15:55:24 10.71.52.2 u90321250 close "/.viminfo" bytes read 624 written 0
+Jul 17 15:55:24 10.71.52.2 u90321250 [10.71.52.2|get|0|624|0|0|0|2f2e76696d696e666f|]
+Jul 17 15:55:24 10.71.52.2 u90321250 close "/.bash_history" bytes read 15 written 0
+Jul 17 15:55:24 10.71.52.2 u90321250 [10.71.52.2|get|0|15|0|0|0|2f2e626173685f686973746f7279|]
+Jul 17 15:55:24 10.71.52.2 u90321250 open "/assignments.html" flags READ mode 0666
+Jul 17 15:55:24 10.71.52.2 u90321250 open "/index.html" flags READ mode 0666
+Jul 17 15:55:24 10.71.52.2 u90321250 close "/assignments.html" bytes read 12260 written 0
+Jul 17 15:55:24 10.71.52.2 u90321250 [10.71.52.2|get|0|12260|0|0|0|2f61737369676e6d656e74732e68746d6c|]
+Jul 17 15:55:24 10.71.52.2 u90321250 close "/index.html" bytes read 4070 written 0
+Jul 17 15:55:24 10.71.52.2 u90321250 [10.71.52.2|get|0|4070|0|0|0|2f696e6465782e68746d6c|]
+Jul 17 15:55:24 10.71.52.2 u90321250 open "/images/load.gif" flags READ mode 0666
+Jul 17 15:55:24 10.71.52.2 u90321250 open "/images/ethanlogo.png" flags READ mode 0666
+Jul 17 15:55:24 10.71.52.2 u90321250 close "/images/ethanlogo.png" bytes read 11187 written 0
+Jul 17 15:55:24 10.71.52.2 u90321250 [10.71.52.2|get|0|11187|0|0|0|2f696d616765732f657468616e6c6f676f2e706e67|]
+Jul 17 15:55:24 10.71.52.2 u90321250 close "/images/load.gif" bytes read 17490 written 0
+Jul 17 15:55:24 10.71.52.2 u90321250 [10.71.52.2|get|0|17490|0|0|0|2f696d616765732f6c6f61642e676966|]
+Jul 17 15:55:24 10.71.52.2 u90321250 open "/images/ethanlogo.ico" flags READ mode 0666
+Jul 17 15:55:24 10.71.52.2 u90321250 open "/logs/access.log.29.2.gz" flags READ mode 0666
+Jul 17 15:55:25 10.71.52.2 u90321250 close "/logs/access.log.29.2.gz" bytes read 767 written 0
+Jul 17 15:55:25 10.71.52.2 u90321250 [10.71.52.2|get|1|767|0|0|0|2f6c6f67732f6163636573732e6c6f672e32392e322e677a|]
+Jul 17 15:55:25 10.71.52.2 u90321250 close "/images/ethanlogo.ico" bytes read 1264415 written 0
+Jul 17 15:55:25 10.71.52.2 u90321250 [10.71.52.2|get|1|1264415|0|0|0|2f696d616765732f657468616e6c6f676f2e69636f|]
+Jul 17 15:55:25 10.71.52.2 u90321250 open "/logs/access.log.23.gz" flags READ mode 0666
+Jul 17 15:55:25 10.71.52.2 u90321250 open "/logs/access.log.25.gz" flags READ mode 0666
+Jul 17 15:55:25 10.71.52.2 u90321250 close "/logs/access.log.23.gz" bytes read 3063 written 0
+Jul 17 15:55:25 10.71.52.2 u90321250 [10.71.52.2|get|0|3063|0|0|0|2f6c6f67732f6163636573732e6c6f672e32332e677a|]
+Jul 17 15:55:25 10.71.52.2 u90321250 close "/logs/access.log.25.gz" bytes read 3960 written 0
+Jul 17 15:55:25 10.71.52.2 u90321250 [10.71.52.2|get|0|3960|0|0|0|2f6c6f67732f6163636573732e6c6f672e32352e677a|]
+Jul 17 15:55:25 10.71.52.2 u90321250 open "/logs/access.log.21.gz" flags READ mode 0666
+Jul 17 15:55:25 10.71.52.2 u90321250 open "/logs/access.log.26.gz" flags READ mode 0666
+Jul 17 15:55:25 10.71.52.2 u90321250 close "/logs/access.log.21.gz" bytes read 8015 written 0
+Jul 17 15:55:25 10.71.52.2 u90321250 [10.71.52.2|get|0|8015|0|0|0|2f6c6f67732f6163636573732e6c6f672e32312e677a|]
+Jul 17 15:55:25 10.71.52.2 u90321250 open "/logs/access.log.24.gz" flags READ mode 0666
+Jul 17 15:55:25 10.71.52.2 u90321250 close "/logs/access.log.26.gz" bytes read 3218 written 0
+Jul 17 15:55:25 10.71.52.2 u90321250 [10.71.52.2|get|0|3218|0|0|0|2f6c6f67732f6163636573732e6c6f672e32362e677a|]
+Jul 17 15:55:25 10.71.52.2 u90321250 open "/logs/access.log.28.7.gz" flags READ mode 0666
+Jul 17 15:55:25 10.71.52.2 u90321250 close "/logs/access.log.24.gz" bytes read 3861 written 0
+Jul 17 15:55:25 10.71.52.2 u90321250 [10.71.52.2|get|0|3861|0|0|0|2f6c6f67732f6163636573732e6c6f672e32342e677a|]
+Jul 17 15:55:25 10.71.52.2 u90321250 open "/logs/access.log.28.4.gz" flags READ mode 0666
+Jul 17 15:55:25 10.71.52.2 u90321250 close "/logs/access.log.28.4.gz" bytes read 1516 written 0
+Jul 17 15:55:25 10.71.52.2 u90321250 [10.71.52.2|get|0|1516|0|0|0|2f6c6f67732f6163636573732e6c6f672e32382e342e677a|]
+Jul 17 15:55:25 10.71.52.2 u90321250 close "/logs/access.log.28.7.gz" bytes read 954 written 0
+Jul 17 15:55:25 10.71.52.2 u90321250 [10.71.52.2|get|0|954|0|0|0|2f6c6f67732f6163636573732e6c6f672e32382e372e677a|]
+Jul 17 15:55:25 10.71.52.2 u90321250 open "/logs/access.log.28.3.gz" flags READ mode 0666
+Jul 17 15:55:25 10.71.52.2 u90321250 open "/logs/sftp.log" flags READ mode 0666

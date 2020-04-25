@@ -1,0 +1,132 @@
+<html>
+<!--ETHAN SUTHERLAND-->
+<head>
+  <title>WDV221 Intro Javascript</title>
+
+<script>
+
+  	var bannerImages = ["banner1.jpg", "banner2.jpg","banner3.jpg","banner4.jpg"];	
+  	var bannerCounter = 0;
+  
+    function displayBanner() 
+	{
+      	if (bannerCounter === bannerImages.length) {		
+        	bannerCounter = 0								
+      	}
+    	document.getElementById("banner").src = bannerImages[bannerCounter];	
+ 	  	bannerCounter++;										
+    	setTimeout("displayBanner()",2000);						
+    }//end of displayBanner()
+</script>
+
+
+<script>
+
+	var numberToGuess = Math.floor(Math.random()*10)+1;	
+	console.log(numberToGuess);
+
+	var numberOfGuesses = 0;
+
+	function highLowGame()
+	{
+	    numberOfGuesses++;
+		var inValue = parseInt( document.getElementById("inputGuess").value );	//get value from the form
+		
+		if (inValue == numberToGuess)
+		{
+		    document.getElementById("highLowResult").innerHTML = "Congratulations!  That is the number.";
+		    document.getElementById("displayGuesses").innerHTML = numberOfGuesses;
+		    changeBackgroundColor("highLowForm", "green");
+		    changeTextColor("resultPara", "initial");
+		}
+		else
+		{
+			if (inValue > numberToGuess)
+			{
+				document.getElementById("highLowResult").innerHTML = "Lower";					
+			}
+			else
+			{
+				document.getElementById("highLowResult").innerHTML = "Higher";					
+			}
+			changeTextColor("resultPara", "red");
+		}
+	}
+	
+	function resetHighLowGame()
+	{
+		document.getElementById("highLowForm").reset();
+		document.getElementById("highLowResult").innerHTML = "";
+		numberToGuess = Math.floor(Math.random()*10)+1;
+		console.log(numberToGuess);
+		changeBackgroundColor("highLowForm", "initial");
+		changeTextColor("resultPara", "initial");
+		numberOfGuesses = 0;
+		document.getElementById("displayGuesses").innerHTML = "";
+	}
+
+	function changeTextColor(inID, inColor) {
+	    document.getElementById(inID).style.color = inColor;
+	}
+
+	function changeBackgroundColor(inID, inColor) {
+	    document.getElementById(inID).style.backgroundColor = inColor;
+	}
+
+
+</script>
+
+</head>
+
+
+<body onLoad="displayBanner()">
+
+<h1>WDV221 Intro Javascript</h1>
+<h2>Final Exam Lab</h2>
+
+<h3>This is an example of a banner rotator</h3>
+<p><img id="banner"></p>
+
+
+<p>Part I. Instructions</p>
+<ol>
+  <li>Add banner2 to the banner rotator</li>
+  <li>Speed up the change to 2 seconds per image</li>
+</ol>
+<p>&nbsp;</p>
+    <form name="highLowForm" id="highLowForm" method="post" action="">
+    <fieldset>
+    	<legend>High Low Game</legend>
+    	<p>
+        	<label>Input a number from 1-10
+          		<input type="text" name="inputGuess" id="inputGuess">
+        	</label>
+       </p>
+      <p id="resultPara">Result! <span id="highLowResult"></span></p>
+      <p>Number of guesses! <span id="displayGuesses"></span></p>
+      <p>
+        <input type="button" name="makeGuess" id="makeGuess" value="Make a Guess">
+        <input type="button" name="resetHighLowGame" id="resetHighLowGame" value="New Game">
+      </p>
+	  <script>
+			document.getElementById("makeGuess").addEventListener("click",highLowGame);	//assign click event to form button	
+			document.getElementById("resetHighLowGame").addEventListener("click",resetHighLowGame);	
+      </script>
+    </fieldset>
+    </form>
+    <p>Part II. Instructions
+    </p>
+    <ol>
+      <li>Change the word &quot;Result&quot; to red when your guess is incorrect.</li>
+      <li>Change the background color of the High Low Game form to green when you get a match! Don't forget to change the 'Result' back to black when you get a match.</li>
+    </ol>
+    <p>Part III. Instructions</p>
+    <ol>
+      <li>Using the High Low Game add script that counts the number of guesses it takes to get a match. </li>
+      <li>Display the Number of Guesses below the Result.</li>
+      <li>Make sure and reset the counter when you start a new game.</li>
+    </ol>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+</body>
+</html>

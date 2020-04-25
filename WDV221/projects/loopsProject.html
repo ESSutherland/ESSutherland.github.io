@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WDV221 Intro Javascript - Loops</title>
+    <script>
+        function totalSales() {
+            var numInput;
+            var input;
+            var numCount = 0;
+            var total = 0;
+            while(input != "no"){
+                numInput = parseFloat(prompt("Enter number: "));
+                total += numInput;
+                numCount++;
+
+                input = prompt("Do you have another number to enter? (yes/no)").toLowerCase();
+            }
+            alert("Numbers entered: " + numCount
+                + "\nTotal: " + total);
+        }
+    </script>
+</head>
+
+<body>
+<h1>WDV221 Intro Javascript</h1>
+<h2>Project-5 Loops Project</h2>
+<hr />
+<p>Please complete the following exercises on this page. When complete post this page to your  server. Make a link in your WDV221 homework  page for this assignment. </p>
+<p>Include a comment in each script with the exercise number and a description of what the script is supposed to do.</p>
+<p>Using Blackboard submit this  Assignment.</p>
+
+    <input type="button" id="button1" name="button1" value="Start Loop" onclick="totalSales()" />
+<hr />
+<h3>Instructions:</h3>
+<ol>
+  <li>Place all your HTML and Javascript  on this page. </li>
+  <li>Create a function called totalSales( ). </li>
+  <li>Use a button to call the function. </li>
+  <li>The function will start a loop that will ask you for a number until you  tell the function that you do not have any more numbers to enter.  </li>
+  <li>The number you enter will be added to an accumulator variable.</li>
+  <li>The loop  will count how many numbers were entered. </li>
+  <li>The loop will ask you if  you have more numbers to enter. If you enter &lsquo;yes&rsquo; the loop will continue. If you enter 'no' the loop will stop. </li>
+  <li>Once the loop stops you should display a message that says how many numbers you entered and the total amount of the numbers you entered.</li>
+  <li>Format the message area to make it easy to find and read. </li>
+</ol>
+<p><strong>Note</strong>: This type of loop is often used when asking the customer or user for input. Most of the time we do not know how many items the customer has to enter. For example: You need to order a number of products and the loop will ask you for the name, quantity and price for each product. It will keep asking you until you do not have any items left to enter. It will then end the loop and complete its processing. <br />
+</p>
+</body>
+</html>

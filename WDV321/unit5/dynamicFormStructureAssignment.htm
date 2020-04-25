@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>WDV321 Advanced Javascript</title>
+    <script src="..\jquery-3.2.1.js"></script>
+    <script src="..\jquery-ui-1.12.1.custom\jquery-ui.js"></script>
+    <link rel="stylesheet" href="..\jquery-ui-1.12.1.custom\jquery-ui.css" />
+</head>
+
+<body>
+    <script>
+        $('document').ready(function () {
+            hideAll();
+            $('#contactType').change(function () {
+                hideAll();
+                if ($('#contactType').val() == 'C') {
+                    $('#dynForm').append("<select name='complaint' id='complaint'><option value='val1'>Complaint 1</option><option value='val2'>Complaint 2</option><option value='val3'>Complaint 3</option><option value='val4'>Complaint 4</option></select>"); 
+                }
+                else if ($('#contactType').val() == 'T') {
+                    $('#dynForm').append("<div id='techProblems'><input type='checkbox' name='techProblems' value='problem1' id='problem1' /><label for='problem1'>Problem 1</label>  <input type='checkbox' name='techProblems' value='problem2' id='problem2' /><label for='problem2'>Problem 2</label>  <input type='checkbox' name='techProblems' value='problem3' id='problem3' /><label for='problem3'>Problem 3</label>  <input type='checkbox' name='techProblems' value='problem4' id='problem4' /><label for='problem4'>Problem 4</label></div>")
+                }
+                else if ($('#contactType').val() == 'P') {
+                    $('#dynForm').append("<div id='prodIssues'><input type='radio' name='prodIssues' value='issues1' id='issues1' /><label for='issues1'>Issue 1</label>  <input type='radio' name='prodIssues' value='issues2' id='issues2' /><label for='issues2'>Issue 2</label>  <input type='radio' name='prodIssues' value='issues3' id='issues3' /><label for='issues3'>Issue 3</label>  <input type='radio' name='prodIssues' value='issues4' id='issues4' /><label for='issues4'>Issue 4</label></div>");
+                }
+            });        
+        });
+
+        function hideAll() {
+            $('#complaint').remove();
+            $('#techProblems').remove();
+            $('#prodIssues').remove();
+        }
+    </script>
+    <h1>WDV321 Advanced Javascript</h1>
+    <h2>Dynamic Form Structure - Assignment</h2>
+    <p>Use this page as the basis for your assignment. Given the drop down list provided on this page please do the following things.</p>
+    <p>
+        <label>
+            Please Select your reason for contactin us.
+            <select name="contactType" id="contactType">
+                <option value="None">---</option>
+                <option value="C">Complaints</option>
+                <option value="T">Technical Problems</option>
+                <option value="P">Product Issues</option>
+            </select>
+        </label>
+    </p>
+    <form name="dynForm" id="dynForm">
+        
+    </form>
+    <ol>
+        <li>When  Complaints are selected please dynamically create and display a new drop down list that includes at least four options of your choice.</li>
+        <li>When Technical Problems are selected please dynamically create and display at least four types of problems with an associated checkbox.</li>
+        <li>When Product Issues aer selected please dynamically create and display at least four types options as a grouped set of radio buttons. </li>
+        <li>When a new option is selected your script should remove any of the dynamic content. </li>
+    </ol>
+    <p>&nbsp;</p>
+</body>
+</html>

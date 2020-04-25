@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>WDV321 Advanced Javascript - Form Validation Project</title>
+    <script src="..\jquery-3.2.1.js"></script>
+    <script src="..\jquery-ui-1.12.1.custom\jquery-ui.js"></script>
+    <link rel="stylesheet" href="..\jquery-ui-1.12.1.custom\jquery-ui.css">
+    <style>
+        label {
+            width: 150px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+
+<body>
+    <script>
+        $('document').ready(function () {
+            //Reset Errors
+            function resetErrors() {
+                $('#custName').css('border-color', 'initial');
+                $('#nameError').html('');
+                $('#custPhone').css('border-color', 'initial');
+                $('#phoneError').html('');
+                $('#custEmail').css('border-color', 'initial');
+                $('#emailError').html('');
+                $('#productError').html('');
+                $('#custComplaint').css('border-color', 'initial');
+                $('#complaintError').html('');
+            }
+            //Submit Button Click
+            $('#file').click(function () {
+                //Valid form variable
+                var validForm = true;
+                resetErrors();
+
+                var nameVal = $('#custName').val();
+                var nameRegEx = /[<>]/g;
+                var phoneVal = $('#custPhone').val();
+                var phoneRegEx = /^(\+0?1\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
+                var emailVal = $('#custEmail').val();
+                var emailRegEx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                var complaintVal = $('#custComplaint').val();
+                var complaintRegEx = /[<>']/g;
+
+                //Check regex for name
+                if ($('#custName').val()) {
+                    $('#custName').css('border-color', 'initial');
+                    $('#nameError').html('');
+                    if (!nameRegEx.test(nameVal)) {
+                        $('#custName').css('border-color', 'initial');
+                        $('#nameError').html('')
+                    }
+                    else {
+                        validForm = false;
+                        $('#custName').css('border-color', 'red');
+                        $('#nameError').css('color', 'red');
+                        $('#nameError').html('Invalid Name');
+                        $('#nameError').css('font-style', 'italic');
+                    }
+                }
+                else {
+                    validForm = false;
+                    $('#custName').css('border-color', 'red');
+                    $('#nameError').css('color', 'red');
+                    $('#nameError').html('Name Required');
+                    $('#nameError').css('font-style', 'italic');
+                }
+                //Check regex for phone
+                if ($('#custPhone').val()) {
+                    if (phoneRegEx.test(phoneVal)) {
+                        $('#custPhone').css('border-color', 'initial');
+                        $('#phoneError').html('');
+                    }
+                    else {
+                        validForm = false;
+                        $('#custPhone').css('border-color', 'red');
+                        $('#phoneError').css('color', 'red');
+                        $('#phoneError').html('Invalid Phone Number');
+                        $('#phoneError').css('font-style', 'italic');
+                    }
+                }
+                //Check regex for email
+                if (emailRegEx.test(emailVal)){
+                    $('#custEmail').css('border-color', 'initial');
+                    $('#emailError').html('');
+                }
+                else {
+                    validForm = false;
+                    $('#custEmail').css('border-color', 'red');
+                    $('#emailError').css('color', 'red');
+                    $('#emailError').html('Invalid Email');
+                    $('#emailError').css('font-style', 'italic');
+                }
+                //Check regex for the radiobox
+                if ($('input[name=custProducts]:checked').val()) {
+                    $('#productError').html('');
+                }
+                else {
+                    $('#productError').css('color', 'red');
+                    $('#productError').html('Select One');
+                    $('#productError').css('font-style', 'italic');
+                }
+                //Check the regex for the comment box
+                if ($('#custComplaint').val()) {
+                    $('#custComplaint').css('border-color', 'initial');
+                    $('#complaintError').html('');
+                    if (!complaintRegEx.test(complaintVal)) {
+                        $('#custComplaint').css('border-color', 'initial');
+                        $('#complaintError').html('')
+                    }
+                    else {
+                        validForm = false;
+                        $('#custComplaint').css('border-color', 'red');
+                        $('#complaintError').css('color', 'red');
+                        $('#complaintError').html('Invalid Characters');
+                        $('#complaintError').css('font-style', 'italic');
+                    }
+                    if ($('#custComplaint').val().length > 120) {
+                        $('#custComplaint').css('border-color', 'red');
+                        $('#complaintError').css('color', 'red');
+                        $('#complaintError').html('More Than 120 Characters');
+                        $('#complaintError').css('font-style', 'italic');
+                    }
+                    else {
+                        $('#custComplaint').css('border-color', 'initial');
+                        $('#complaintError').html('')
+                    }
+                }
+                else {
+                    validForm = false;
+                    $('#custComplaint').css('border-color', 'red');
+                    $('#complaintError').css('color', 'red');
+                    $('#complaintError').html('Comment Required');
+                    $('#complaintError').css('font-style', 'italic');
+                }
+                //Check form validation
+                if (validForm) {
+                    $('#form1').submit();
+                }
+            });
+
+            //Reset click button
+            $('#reset').click(function () {
+                resetErrors();
+            });
+        });
+    </script>
+    <h2>WDV321 Advanced Javascript </h2>
+    <h3>Form Validation Project - Complaint Form</h3>
+    <form id="form1" name="form1" method="post" action="">
+        <p>Please enter the following information in order to process your concerns.</p>
+        <p>
+            <label for="custName">Name:</label>
+            <input type="text" name="custName" id="custName" placeholder="John Smith"/>
+            <span id="nameError"></span>
+        </p>
+        <p>
+            <label for="custPhone">Phone Number: </label>
+            <input type="text" name="custPhone" id="custPhone" placeholder="555-555-5555 (optional)" />
+            <span id="phoneError"></span>
+        </p>
+        <p>
+            <label for="custEmail">Email: </label>
+            <input type="text" name="custEmail" id="custEmail" placeholder="something@example.com" />
+            <span id="emailError"></span>
+        </p>
+        <p>Please Select Product Group:  <span id="productError"></span></p>
+        <p>
+            <label>
+                <input type="radio" name="custProducts" value="books" id="custProducts_0" />
+                Books
+            </label>
+            <br />
+            <label>
+                <input type="radio" name="custProducts" value="movies" id="custProducts_1" />
+                Movies
+            </label>
+            <br />
+            <label>
+                <input type="radio" name="custProducts" value="electronics" id="custProducts_2" />
+                Consumer Electronics
+            </label>
+            <br />
+            <label>
+                <input type="radio" name="custProducts" value="computer" id="custProducts_3" />
+                Computer
+            </label>
+            
+            <br />
+        </p>
+        <p>Description of problem:	(Limit 120 characters)  <span id="complaintError"></span></p>
+        <p>
+            <label for="custComplaint"></label>
+            <textarea name="custComplaint" id="custComplaint" cols="45" rows="5"></textarea>
+        </p>
+        <p>
+            <input type="button" name="file" id="file" value="File Complaint" />
+            <input type="reset" name="reset" id="reset" value="Reset" />
+        </p>
+    </form>
+    <p>&nbsp;</p>
+</body>
+</html>

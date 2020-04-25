@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="..\jquery-3.2.1.js"></script>
+    <script src="..\jquery-ui-1.12.1.custom\jquery-ui.js"></script>
+    <script>
+        var JavaBook = {
+            "ISBN": "0-596-00016-2",
+            "title": "Java and XML",
+            "price": 39.95,
+            "publisher": "O'Reilly & Associates",
+            "authors": [
+                {
+                    "fname": "Brett",
+                    "lname": "McLaughlin",
+                }
+            ],
+            "copyright": 2000
+        };
+        var VB6Book = {
+            "ISBN": "1-861003-32-3",
+            "title": "Professional Visual Basic 6 XML",
+            "price": 49.99,
+            "publisher": "Wrox Press",
+            "authors": [
+                {
+                    "fname": "James",
+                    "lname": "Britt"
+                },
+                {
+                    "fname": "Tuen",
+                    "lname": "Duynstee"
+                }
+            ],
+            "copyright": 2000
+        }
+
+        var textbooks = { JavaBook, VB6Book };
+
+        function displayBookInfo(elementID, book) {
+            $(elementID + 'Title').html(book.title);
+            $(elementID + 'ISBN').html(book.ISBN);
+            $(elementID + 'Price').html(book.price);
+            $(elementID + 'Publisher').html(book.publisher);
+            for (i = 0; i < book.authors.length; i++) {
+                $(elementID + 'Authors').append(book.authors[i].fname + " " + book.authors[i].lname + ", ");
+            }
+            $(elementID + 'Copyright').html(book.copyright);
+    }
+    </script>
+</head>
+<body>
+    <script>
+        $(document).ready(function () {
+            displayBookInfo("#book1", textbooks.JavaBook);
+            displayBookInfo("#book2", textbooks.VB6Book);
+        });
+
+        
+        
+    </script>
+    <h1>WDV 321 Advanced Javascript</h1>
+    <h2>JSON Assignment</h2>
+    <p><h3>Book 1</h3></p>
+    <p>Title: <span id="book1Title"></span></p>
+    <p>ISBN: <span id="book1ISBN"></span></p>
+    <p>Price: $<span id="book1Price"></span></p>
+    <p>Publisher: <span id="book1Publisher"></span></p>
+    <p>Author(s): <span id="book1Authors"></span></p>
+    <p>Copyright: <span id="book1Copyright"></span></p>
+
+    <p><h3>Book 2</h3></p>
+    <p>Title: <span id="book2Title"></span></p>
+    <p>ISBN: <span id="book2ISBN"></span></p>
+    <p>Price: $<span id="book2Price"></span></p>
+    <p>Publisher: <span id="book2Publisher"></span></p>
+    <p>Author(s): <span id="book2Authors"></span></p>
+    <p>Copyright: <span id="book2Copyright"></span></p>
+</body>
+</html>

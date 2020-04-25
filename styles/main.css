@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+/***********************ELEMENT STYLING*************************************/
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  margin: auto;
+  font-family: 'Comfortaa', cursive;
+  letter-spacing: 3px;
+}
+aside{
+  background-color: #adadad;
+  text-align: center;
+  width: 13.5%;
+  min-width: 160px;
+  height: 100%;
+  position: fixed;
+  float: left;
+}
+nav{
+  padding-top: 20px;
+}
+nav li{
+  font-size: 1.4em;
+  list-style: none;
+  padding: 30px 0 30px 0;
+  margin: 0 0 0 20px;
+  font-weight: bold;
+  border-bottom: solid 2px #737373;
+}
+nav ul a:link{
+  color: #000000;
+  text-decoration: none;
+}
+nav ul a:visited{
+  color: #000000;
+}
+nav ul a:hover{
+  color: #ff6161;
+}
+footer{
+  width: 600px;
+  margin-top: 300px;
+  padding-bottom: 100px;
+  margin-left: 38%;
+}
+/*****************************ID STYLING*****************************/
+#logo{
+  background-color: #737373;
+  padding-bottom: 5px;
+}
+#logo:hover{
+  background: rgba(0, 0, 0, 0.6);
+}
+#logo h4{
+  color: #FFFFFF;
+}
+#logo a:link{
+  text-decoration: none;
+}
+#logoImg{
+  width: 50%;
+}
+#main {
+  float: right;
+  margin-left: 15%;
+  margin-right: 5%;
+  text-align: center;
+  width: 80%;
+  border-left: solid 2px #adadad;
+}
+#main h1{
+  font-size: 3em;
+  margin-top: 250px;
+  color: #ff6161;
+  margin-left: 200px;
+  margin-bottom: 100px;
+  padding: 20px 200px 20px 200px;
+  border-bottom: solid 2px #ff6161;
+}
+
+#repos{
+  text-decoration: none;
+  background-color: #dddddd;
+  padding: 30px 0 30px 0;
+  margin-left: 200px;
+  clear: both;
+}
+#repos a:link{
+  color: #ff6161;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-decoration: none;
+}
+#repos a:visited{
+  color: #ff6161;
+}
+#repos a:hover{
+  color: #ff0000;
+}
+#repos h2{
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: solid 2px #000000;
+}
+#arrow {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #FFFFFF;
+  float: right;
+}
+#credit{
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  border-bottom: solid 2px #737373;
+}
+#title{
+  font-size: 5em;
+  color: #ff6161;
+  margin-top: 100px;
+  margin-left: 200px;
+  font-weight: bold;
+}
+/********************************CLASS STYLING*******************************/
+.repodiv{
+  width: 260px;
+  height: 220px;
+  margin-left: 130px;
+  margin-bottom: 30px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: block;
+  float: left;
+}
+.repodiv p{
+  margin: 20px;
+}
+.resetfloat{
+clear: both;
+}
+.desc{
+  margin-top: 20px;
+  font-size: .8em;
+}
+.lang{
+  margin-top: 20px;
+  font-size: .8em;
+  background-color: rgba(255, 0, 0, 0.2);
+  padding: 5px;
+}
+.sub{
+  font-size: 1.8em;
+  margin-left: 200px;
+  line-height: 45px;
+  margin-bottom: 50px;
+}
+.sub a:link{
+  color: #ff6161;
+  text-decoration: none;
+}
+.sub a:visited{
+  color: #ff6161;
+}
+.breaker{
+  width: 20%;
+  margin: 50px 0 50px 47%;
+  border-bottom: solid 2px #adadad;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa {
+  margin-top: 50px;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-linkedin{
+  background: #0066ff;
+  color: white;
+}
+.classUnits{
+  padding: 20px;
+  width: 175px;
+  height: 150px;
+  margin-left: 125px;
+  margin-bottom: 30px;
+  font-size: 1em;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: block;
+  float: left;
+}
+.assignmentsbg h2{
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: solid 2px #000000;
+}
+.classUnits h3{
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: solid 2px #737373;
+}
+.classUnits li{
+  list-style: none;
+  margin-bottom: 10px;
+}
+.classUnits li a:link{
+  text-decoration: none;
+  color: #ff6161;
+}
+.classUnits li a:visited{
+  text-decoration: none;
+  color: #ff6161;
+}
+.classUnits li a:hover{
+  text-decoration: none;
+  color: #ff0000;
+}
+.assignmentsbg{
+  background-color: #dddddd;
+  padding: 30px 0 30px 0;
+  margin-left: 200px;
+}
+.label{
+ text-align: center;
+ padding-bottom: 10px;
+ border-bottom: solid 2px #737373;
+}

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<!--Ethan Sutherland-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Dynamic Content</title>
+    <script src="..\jquery-3.2.1.js"></script>
+    <script src="..\jquery-ui-1.12.1.custom\jquery-ui.js"></script>
+    <link rel="stylesheet" href="..\jquery-ui-1.12.1.custom\jquery-ui.css" />
+</head>
+<body>
+    <script>
+        var products = ['Pen', 'Paper', 'Pencil'];
+        var colors = ['Red', 'Blue', 'Yellow']
+
+        $(document).ready(function () {
+            $('input[name = resultRadio]:radio').change(function () {
+                if ($(this).val() == 'radioColor') {
+                    var colorOptions = "";
+                    for (i = 0; i < colors.length; i++) {
+                        colorOptions += "<option value='color" + (i + 1) + "'>" + colors[i] + "</option>";
+                    }
+                    $('#results').html(colorOptions);
+                }
+                if ($(this).val() == 'radioProd') {
+                    var prodOptions = "";
+                    for (i = 0; i < products.length; i++) {
+                        prodOptions += "<option value='product" + (i + 1) + "'>" + products[i] + "</option>";
+                    }
+                    $('#results').html(prodOptions);
+                }             
+            });
+        });
+    </script>
+    <h1>WDV 321 Advanced Javascript</h1>
+    <h2>Dynamic Content Assignment</h2>
+    <form id="form1">
+        <p>          
+            Colors
+            <input type="radio" name="resultRadio" value="radioColor" />
+            Products
+            <input type="radio" name="resultRadio" value="radioProd" />
+        </p>
+        <p>
+            <select id="results">
+                <option value="none">---</option>
+            </select>
+        </p>
+    </form>
+</body>
+</html>

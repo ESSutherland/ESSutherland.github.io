@@ -1,0 +1,118 @@
+
+/* these four styles below are used with aside */
+
+aside {
+  width: 300px;
+  margin-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  overflow: visible;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+aside h3 {
+  margin: 0; 
+}
+
+aside p {
+  margin: 0;
+  padding: 5px;
+  color: white;
+  background-color: maroon;
+  text-align: left;
+}
+
+ 
+/* enter the code for your styles below */
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+body
+{
+	font-size: 1.2em;
+	font-family: Arial, sans-serif;
+	background-color: slategray;
+	color: black;
+	margin-top: 15px;
+}
+
+div#wrapper
+{
+	width: 900px;
+	margin: 10px auto 0 auto;
+	border: 2px solid maroon;
+	border-radius: 20px;
+	background-color: white;
+}
+
+header
+{
+	width: 900px;
+	margin: 0 auto 0 auto;
+	border: 2px solid maroon;
+	border-radius: 20px;
+	text-align: center;
+	background-color: white;
+}
+
+#main
+{
+	width: 550px;
+	padding: 5px 5px 5px 5px;
+	border-left: 3px solid maroon;
+	float: left;
+}
+
+section p
+{
+	text-indent: 1em;
+}
+
+footer
+{
+	font-family: Arial, Helvetica, sans-serif;
+	clear: both;
+	margin-top: 1em;
+	text-align: center;
+	color: white;
+	background-color: gray;
+	padding: 10px;
+	border: 1px solid maroon;
+	border-radius: 30px;
+}
+
+nav
+{
+	background-color: maroon;
+	border: 1px solid maroon;
+	border-radius: 20px;
+}
+
+nav li
+{
+	list-style: none;
+	display: inline;
+	padding-left: 30px;
+}
+
+nav a:link
+{
+	color: white;
+	text-decoration: none;
+}
+
+nav a:visited
+{
+	color: gray;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	background-color: white;
+	color: maroon;
+}

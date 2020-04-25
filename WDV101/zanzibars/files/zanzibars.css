@@ -1,0 +1,92 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+body
+{
+	background-image: url(images/spike.png);
+	background-repeat: repeat-x;
+	background-color: #1E1713;
+	font-size: 1.3em;
+}
+
+nav
+{
+	background-color: #2A1D15;
+	text-align: center;
+	border-bottom: solid 2px #E3A357;
+	padding: 3px;
+	font-family: Impact, sans-serif;
+}
+
+nav ul li
+{
+	display: inline;
+	text-align: center;
+	margin-right: 10px;
+	padding: 3px;
+	color: #E3A357;
+}
+
+
+#container
+{
+	width: 1600px;
+	font-family: Arial, sans-serif;
+	background-color: #9B805A;
+	margin: 0 auto 0 auto;
+	color: #2A1D15;
+}
+
+header
+{
+	text-align: center;
+	font-family: Arial Black, sans-serif;
+	color: #D3BF94;
+	font-weight: bold;
+	padding: 30px;
+	font-size: 1.8em;
+	border-radius: 20px;
+	text-transform: uppercase;
+}
+
+a:link
+{
+	color: #E3A357;
+	text-decoration: none;
+}
+
+a:visited
+{
+	color: #E3A357;
+	text-decoration: none;
+}
+
+a:hover
+{
+	background-color: #1E1713;
+	color: #D3BF94;
+	padding: 3px 0 3px 0;
+}
+
+footer
+{
+	clear: both;
+	background-color: #2A1D15;
+	text-align: center;
+	padding: 3px;
+	color: #E3A357;
+	border-top: solid 2px #E3A357;
+	font-weight: normal;
+}
+
+h4
+{
+	margin-top: 3px;
+	padding-bottom: 3px;
+	font-size: .5em;
+	text-align: center;
+	color: #2A1D15;
+}

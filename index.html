@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ethan Sutherland - Home</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="images/ethanlogo.png">
+    <script src="scripts/jquery-3.2.1.js"></script>
+    <script src="scripts/githubAPI.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+
+    </script>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function(){
+        callAPI();
+        $(window).scroll(function() {
+          checkForArrow('#main');
+          checkForArrow('#about');
+          checkForArrow('#school');
+          checkForArrow('#github');
+          checkForArrow('#contact');
+        });
+      });
+    </script>
+    <aside>
+      <section id="logo">
+        <a href="#main"><img src="images/ethanlogo.png" id="logoImg" alt="Logo">
+        <h4 id="name">Ethan Sutherland</h4><a/>
+      </section>
+      <nav>
+        <ul>
+          <a href="#about"><li id="about-li">About</li></a>
+          <a href="#school"><li id="school-li">School</li></a>
+          <a href="#github"><li id="github-li">Github</li></a>
+          <a href="#contact"><li id="contact-li">Contact</li></a>
+        </ul>
+      </nav>
+    </aside>
+    <section id="main">
+      <h2 id="title">Ethan Sutherland</h2>
+
+      <div class="breaker"></div>
+
+      <h1 id="top">Software Developer</h1>
+      <p class="sub">I currently have no professional experince with software development, but I am looking for any opprotunity to gain some.
+        I have some knowledge in many programming languages such as: Java, C++, C#, HTML, CSS, and Javascript. I have also used the Javascript frameworks jQuery and React, and I have a little experience in the Unity Game Development Engine.
+        I am also willing and wanting to learn anything new.</p>
+
+        <div class="breaker"></div>
+
+      <h1 id="about">About</h1>
+      <p class="sub">My name is Ethan Sutherland and I am a twenty-two year old Software Developer from Des Moines, Iowa.
+        I graduated from Des Moines Area Community College in the fall of 2017 with an AAS degree in Business Information Systems with a focus on Object-Oriented Programming, and
+        I plan to go to Iowa State University in the fall of 2018 to pursue a Bachelors Degree in Software Engineering.</p>
+
+        <div class="breaker"></div>
+
+      <h1 id="school">School</h1>
+      <p class="sub"><a href="assignments.html">Click Here</a> to see my assignments and projects from my HTML/CSS, Javascript, and Advanced Javascript courses at DMACC, and check my github to see assignments from other courses
+        as well as personal projects.</p>
+
+      <div class="breaker"></div>
+
+      <h1 id="github">Github</h1>
+      <p class="sub">Below are my starred Github repositories, click on any repository to see more detail. To see all of my repositories click <a href="https://github.com/ESSutherland" target="_blank">Here</a> to go to my Github profile.</p>
+      <div id="repos"></div>
+
+      <div class="breaker"></div>
+
+      <h1 id="contact">Contact</h1>
+      <p class="sub">Please use my Email or Phone to contact me, if I don't answer, please leave a message so I can return your call as soon a I can.</p>
+      <p class="sub">
+        Email - <a href="mailto:ESutherland95@gmail.com">ESutherland95@gmail.com</a>
+        <br/>
+        Phone - <a href="tel:5157823174">(515)782-3174</a>
+      </p>
+
+      <div class="breaker"></div>
+
+      <footer>
+        <span id="credit">Ethan Sutherland - 2018</span>
+        <br/>
+        <a href="https://twitter.com/ESutherland95?lang=en" class="fa fa-twitter"></a>
+        <a href="https://www.facebook.com/ethan.sutherland1" class="fa fa-facebook"></a>
+        <a href="https://www.linkedin.com/in/ethan-sutherland-59061b58/" class="fa fa-linkedin"></a>
+      </footer>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!--
+    Tutorial 9, Case 4
+    Your Name: Ethan Sutherland
+    Today's Date:
+
+  -->
+
+<script src="modernizr-2.js"></script><title>LaFleur Caterers</title>
+<title></title>
+
+<style type="text/css">
+
+
+
+* { 
+  margin: 0; 
+  padding: 0;
+}
+
+#container {
+  width: 80%;
+  margin: 0 auto;
+  border-width: 1px;
+}
+
+form {
+  margin-top: 1em;
+  border: solid 2px navy;
+  padding: 1em;
+  font-size: 16px;
+}
+
+
+label {
+  width: 150px;
+  margin-right: 15px;
+  color: black;
+  float: left;
+  text-align: right;
+}
+
+img { 
+   display: block;
+   margin: 0 auto;
+}
+
+body
+{
+	background-color: lightgray;
+	font-size: 1.2em;
+	color: black;
+	font-family: Arial, sans-serif;
+}
+
+input
+{
+	display: block;
+	margin-bottom: 5px;
+}
+
+fieldset
+{
+	width: 80%;
+	margin-left: 8%;
+	margin-bottom: 15px;
+	padding: 15px;
+	border: solid 2px black;
+}
+
+legend
+{
+	font-weight: bold;
+}
+
+input.button
+{
+	margin-top: 2em;
+	border: solid thin black;
+	padding: 5px;
+	color: black;
+	background-color: yellow;
+	font-weight: bold;
+	display: inline;
+}
+</style>
+
+</head>
+
+<body>
+
+<section id="container">
+
+<p><img src="images/surveylogo.gif" alt="survey logo image" width="600" height="100" /></p>
+
+<form id="mailing" action="">
+
+<!-- enter your forms code below -->
+<fieldset>
+<legend>Info</legend>
+
+<label for = "firstname">First Name</label>
+<input type = "text" name = "firstname" id = "firstname" size = "15" maxlength = "15"/>
+
+<label for = "lastname">Last Name</label>
+<input type = "text" name = "lastname" id = "lastname" size = "15" maxlength = "15"/>
+
+<label for = "age">Age</label>
+<input type = "text" name = "age" id = "age" size = "2" maxlength = "2" />
+</fieldset>
+
+<fieldset>
+<legend>Password</legend>
+
+<label for = "password">Password</label>
+<input type = "password" name = "password" id = "password" size = "15" maxlength = "15" />
+</fieldset>
+
+<fieldset>
+<legend>Survey</legend>
+
+<fieldset>
+<legend>Year in school</legend>
+
+<select>
+<option value = "freshman">Freshman</option>
+<option value = "sophomore">Sophomore</option>
+<option value = "junior">Junior</option>
+<option value = "senior">Senior</option>
+</select>
+
+</fieldset>
+<fieldset>
+
+<legend>Satisfaction with campus services</legend>
+
+<label for = "services1">Very Satisfied</label>
+<input type = "radio" name = "services" id = "services1" value = "services1"/>
+
+<label for = "services2">Somewhat Satisfied</label>
+<input type = "radio" name = "services" id = "services2" value = "services2" checked = "checked"/>
+
+<label for = "services3">Not Satisfied</label>
+<input type = "radio" name = "services" id = "services3" value = "services3" />
+</fieldset>
+
+<fieldset>
+<legend>Select your favorite parts of this school</legend>
+
+<label for = "sports">Sports program</label>
+<input type = "checkbox" name = "sports" id = "sports" value = "sports"/>
+
+<label for = "acedemic">Acedemic program</label>
+<input type = "checkbox" name = "acedemic" id = "acedemic" value = "acedemic" />
+
+<label for = "clubs">Clubs</label>
+<input type = "checkbox" name = "clubs" id = "clubs" value = "clubs" />
+
+<label for = "other">Other</label>
+<input type = "checkbox" name = "other" id = "other" value = "other" checked = "checked" />
+
+</fieldset>
+<fieldset>
+<legend>Please voice any issues</legend>
+<textarea name = "issues" id = "issues" rows = "12" cols = "50"></textarea>
+</fieldset>
+<input type = "submit" value = "Submit" class = "button" />
+<input type = "reset" value = "Reset" class = "button"/>
+</fieldset>
+</form>
+
+</section> <!-- end container -->
+
+</body>
+</html>
